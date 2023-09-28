@@ -5,22 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Princeton School</title>
     <link rel="stylesheet" href="output.css" />
+    <!-- ionic icon module -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
-    <nav class="flex justify-around bg-blue-200 p-4">
-      <div class="flex justify-around items-center border border-slate-700 p-2">
-        <img class="h-10" src="/img/princeton-logo.png" alt="princeton logo" />
-        <h1 class="font-bold">Princeton College</h1>
+    <nav class="flex justify-between flex-col bg-blue-100 p-1 font-bold">
+      <div class="block border border-slate-700 p-2 text-center">
+        <img class="h-15 m-auto" src="/img/princeton-logo.png" alt="princeton logo" />
+        <h1 class="3xl-text">Princeton College Blog</h1>
       </div>
-      <ul class="flex items-center [&>*]:p-2 font-bold text-stone-600 [&>:not(last-child)]:mr-3">
-        <li><a href="#press">PRESS CLUB</a></li>
-        <li><a href="#jet">JET CLUB</a></li>
-        <li><a href="#drama">DRAMA & ART</a></li>
-        <li><a href="#music">MUSIC</a></li>
-      </ul>
+      <!-- harmburger menu icon and close icon -->
+      <a id="toggle-button" class="hover:cursor-pointer absolute right-2 top-4">
+        <span class="block">
+          <ion-icon name="menu" size="large" onclick="menu(this)"></ion-icon>
+        </span>
+        <span class="hidden">
+          <ion-icon name="close" size="large"></ion-icon>
+        </span>
+      </a>
+      <div class="h-screen text-center hidden" id="nav">
+        <ul
+          class="[&>*]:p-2 font-bold text-stone-600 [&>:not(last-child)]:mr-1"
+        >
+          <li><a href="#press">PRESS Club</a></li>
+          <li><a href="#jet">JET Club</a></li>
+          <li><a href="#Drama & Dance">Drama & Dance</a></li>
+          <li><a href="#Music & Orchestra">Music & Orchestra</a></li>
+          <li><a href="#Home Maker">Home Maker</a></li>
+          <li><a href="#Literature and Debating">Literature & Debating</a></li>
+          <li>
+            <a href="#Young Earth Space Science">Young Earth & Space Science</a>
+          </li>
+          <li><a href="#Citizenship">Citizenship</a></li>
+          <li><a href="#young-entrepreneur">Young Entrepreneur</a></li>
+        </ul>
+      </div>
     </nav>
     <main>
       <section class=""></section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,13 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./dist/*.{html,js}"],
-  
-  screens: {
-    "mobile": "320px",
-    "tablet": "690px",
-    "laptop": "1024px",
-  },
+
   theme: {
+    screens: {
+      "mobile": "320px",
+      "tablet": "690px",
+      "laptop": "1024px",
+    },
+
     colors: {
       blue: {
         '50': '#ecfbff',
@@ -15,6 +16,7 @@ module.exports = {
         '200': '#a5ebfc',
         '300': '#67ddf9',
         '400': '#38c2f2',
+
       },
       slate: {
         '300': '#cbd5e1',
@@ -24,6 +26,7 @@ module.exports = {
         '700': '#334155',
         '800': '#1e293b',
         '900': '#0f172a',
+        
       },
       stone: {
         '100': '#fafafa',
