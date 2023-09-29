@@ -15,14 +15,14 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </head>
-  <body>
-    <nav class="flex justify-between flex-col bg-blue-100 p-1 font-bold">
-      <div class="block border border-slate-700 p-2 text-center">
-        <img class="h-15 m-auto" src="/img/princeton-logo.png" alt="princeton logo" />
-        <h1 class="3xl-text">Princeton College Blog</h1>
+  <body class="">
+    <nav class="flex justify-between flex-col bg-blue-100 p-1 font-bold w-full">
+      <div class="border border-slate-700 p-2 w-1/3 text-center max-w-md">
+        <img class="xs:h-10 block m-auto" src="/img/princeton-logo.png" alt="princeton logo" />
+        <h1 class="text-sm">Princeton College Blog</h1>
       </div>
       <!-- harmburger menu icon and close icon -->
-      <a id="toggle-button" class="hover:cursor-pointer absolute right-2 top-4">
+      <a id="toggle-button" class="hover:cursor-pointer absolute right-9 top-5">
         <span class="block">
           <ion-icon name="menu" size="large" onclick="menu(this)"></ion-icon>
         </span>
@@ -30,9 +30,9 @@
           <ion-icon name="close" size="large"></ion-icon>
         </span>
       </a>
-      <div class="h-screen text-center hidden" id="nav">
+      <div class="h-screen text-center hidden max-sm:text-sm" id="nav">
         <ul
-          class="[&>*]:p-2 font-bold text-stone-600 [&>:not(last-child)]:mr-1"
+          class="[&>*]:p-2 font-bold text-stone-600/100 [&>:not(last-child)]:mr-1"
         >
           <li><a href="#press">PRESS Club</a></li>
           <li><a href="#jet">JET Club</a></li>

@@ -4,9 +4,13 @@ module.exports = {
 
   theme: {
     screens: {
-      "mobile": "320px",
-      "tablet": "690px",
-      "laptop": "1024px",
+      'xs': '320px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+
     },
 
     colors: {
@@ -26,7 +30,7 @@ module.exports = {
         '700': '#334155',
         '800': '#1e293b',
         '900': '#0f172a',
-        
+
       },
       stone: {
         '100': '#fafafa',
