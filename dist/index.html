@@ -7,37 +7,29 @@
     <link rel="stylesheet" href="output.css" />
     <link rel="icon" type="image/png" sizes="32x32"
     href="/img/princeton-logo.png"">
-    <!-- ionic icon module -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
   </head>
   <body class="m-auto max-w-[1200px] pb-16">
-    <header class="flex items-center justify-between p-[32px]">
+    <header class="flex items-center justify-between p-[32px] border-2">
       <div class="border border-slate-700 max-w-md">
         <img
-          class="block h-10 w-full max-w-full"
+          class="block h-10"
           src="/img/princeton-logo.png"
           alt="princeton logo"
         />
         <h1 class="text-sm">Princeton College</h1>
       </div>
-      <!-- harmburger menu icon and close icon -->
-      <!-- <a id="toggle-button" class="hover:cursor-pointer absolute right-9 top-5">
-        <span class="block">
-          <ion-icon name="menu" size="large" onclick="menu(this)"></ion-icon>
-        </span>
-        <span class="hidden">
-          <ion-icon name="close" size="large"></ion-icon>
-        </span>
-      </a> -->
-      <nav class="hidden" id="nav">
-        <ul class="">
+      <!-- harmburger menu icon and close icon  -->
+      </a>
+      <nav
+        class="opacity-0 -z-99 transition-all duration-300 ease-in-out"
+        id="nav"
+      >
+        <button id="menu-close" class="absolute top-5 right-5 z-9999 cursor-pointer bg-transparent-black">
+          <img src="/img/icon-menu-close.svg" alt="" />
+        </button>
+        <ul
+          class="absolute top-1/2 -translate-y-1/2 [&>*]:my-5 [&>*]:text-[16px]"
+        >
           <li><a href="">Home</a></li>
           <li><a href="">New</a></li>
           <li><a href="">Popular</a></li>
@@ -45,6 +37,11 @@
           <li><a href="">Categories</a></li>
         </ul>
       </nav>
+      <div class="menu-button">
+        <button class="hover:cursor-pointer lg:hidden" id="menu-button">
+          <img src="/img/icon-menu.svg" alt="" />
+        </button>
+      </div>
     </header>
     <main class="p-5">
       <!-- <li><a href="#press">HOME</a></li>
@@ -61,7 +58,9 @@
 
       <section class="[&>*]:mb-4">
         <!-- press section header image with title and subtitle -->
-        <div class="w-full lg:flex md:grid md:grid-cols-2 gap-8 [&>*]:mt-4 [&>*]:border-2">
+        <div
+          class="w-full lg:flex md:grid md:grid-cols-2 gap-8 [&>*]:mt-4 [&>*]:border-2"
+        >
           <div class="">
             101orem ipsum dolor sit amet consectetur adipisicing elit. Commodi
             est amet, inventore voluptatibus dolores id, maxime ratione eaque
@@ -133,6 +132,6 @@
     >
       Made with love by Princeton College Students
     </footer>
-    <script src="script.js"></script>
+    <script src="/dist/script.js"></script>
   </body>
 </html>

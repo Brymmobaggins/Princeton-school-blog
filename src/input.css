@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+header {
+  background-color: transparent;
+}
+nav.open {
+  background-color: white;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 75vw;
+  padding: 1.25rem;
+  opacity: 1;
+  z-index: 99999;
+}  
+
+/* #menu-close{
+    background: transparent;
+} */

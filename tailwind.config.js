@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/*.{html,js}"],
+  content: ['./dist/*.{html,js}',
+    './dist/**/*.js'],
 
   theme: {
     screens: {
@@ -21,6 +22,11 @@ module.exports = {
         '300': '#67ddf9',
         '400': '#38c2f2',
 
+      },
+      transparent:{
+        'black':'#00000000',
+        
+      
       },
       slate: {
         '300': '#cbd5e1',
