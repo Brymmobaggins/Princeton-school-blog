@@ -9,8 +9,8 @@
     href="/img/princeton-logo.png"">
   </head>
   <body class="m-auto max-w-[1200px] pb-16">
-    <header class="flex items-center justify-between p-[32px] border-2">
-      <div class="border border-slate-700 max-w-md">
+    <header class="flex items-center justify-between p-[32px]">
+      <div class="max-w-md text-center">
         <img
           class="block h-10"
           src="/img/princeton-logo.png"
@@ -21,14 +21,14 @@
       <!-- harmburger menu icon and close icon  -->
       </a>
       <nav
-        class="opacity-0 -z-99 transition-all duration-300 ease-in-out"
+        class="lg:opacity-90 lg:w-full opacity-0 transition-all duration-300 ease-in-out"
         id="nav"
       >
-        <button id="menu-close" class="absolute top-5 right-5 z-9999 cursor-pointer bg-transparent-black">
+        <button id="menu-close" class="absolute top-5 right-5 outline-0 border-0 z-9i cursor-pointer bg-transparent-black lg:hidden">
           <img src="/img/icon-menu-close.svg" alt="" />
         </button>
         <ul
-          class="absolute top-1/2 -translate-y-1/2 [&>*]:my-5 [&>*]:text-[16px]"
+          class="lg:relative lg:top-0 lg:translate-y-[0%] lg:flex lg:items-center lg:justify-end lg:gap-8 [&>*]:m-0 absolute top-1/2 -translate-y-1/2 [&>*]:my-5 [&>*]:text-[16px]"
         >
           <li><a href="">Home</a></li>
           <li><a href="">New</a></li>
@@ -38,7 +38,7 @@
         </ul>
       </nav>
       <div class="menu-button">
-        <button class="hover:cursor-pointer lg:hidden" id="menu-button">
+        <button class="hover:cursor-pointer lg:hidden outline-0" id="menu-button">
           <img src="/img/icon-menu.svg" alt="" />
         </button>
       </div>

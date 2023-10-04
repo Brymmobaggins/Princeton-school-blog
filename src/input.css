@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 img {
   width: 100%;
   max-width: 100%;
@@ -11,7 +10,7 @@ header {
   background-color: transparent;
 }
 nav.open {
-  background-color: white;
+  background-color: #cddef5;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -19,9 +18,17 @@ nav.open {
   width: 75vw;
   padding: 1.25rem;
   opacity: 1;
-  z-index: 99999;
-}  
+  z-index: 9999999999;
+}
 
-/* #menu-close{
-    background: transparent;
-} */
+@media (min-with: 1024px) {
+  nav.open {
+    position: relative;
+    width: auto;
+    background-color: transparent;
+    padding: 0;
+    z-index: auto;
+    opacity: 1;
+  }
+
+} 
