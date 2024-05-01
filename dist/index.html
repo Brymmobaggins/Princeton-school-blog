@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Princeton School</title>
+
     <link rel="stylesheet" href="output.css" />
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32"
     href="/img/princeton-logo.png"">
   </head>
   <body class="m-auto max-w-[1200px] pb-16">
-    <header class="flex items-center justify-between p-[32px]">
+    <header
+      class="flex items-center justify-between p-[32px] border-2 border-blue-200"
+    >
       <div class="max-w-md text-center">
         <img
           class="block h-10"
@@ -19,44 +23,67 @@
         <h1 class="text-sm">Princeton College</h1>
       </div>
       <!-- harmburger menu icon and close icon  -->
-      </a>
+      <!-- </a> -->
       <nav
-        class="lg:opacity-90 lg:w-full opacity-0 transition-all duration-300 ease-in-out"
+        class="lg:opacity-90 lg:w-full opacity-0 transition-all duration-300 ease-out"
         id="nav"
       >
-        <button id="menu-close" class="absolute top-5 right-5 outline-0 border-0 z-9i cursor-pointer bg-transparent-black lg:hidden">
+        <button
+          id="menu-close"
+          class="absolute top-5 right-5 outline-0 border-0 z-9i cursor-pointer bg-transparent-black lg:hidden"
+        >
           <img src="/img/icon-menu-close.svg" alt="" />
         </button>
         <ul
           class="lg:relative lg:top-0 lg:translate-y-[0%] lg:flex lg:items-center lg:justify-end lg:gap-8 [&>*]:m-0 absolute top-1/2 -translate-y-1/2 [&>*]:my-5 [&>*]:text-[16px]"
         >
           <li><a href="">Home</a></li>
-          <li><a href="">New</a></li>
-          <li><a href="">Popular</a></li>
-          <li><a href="">Trending</a></li>
-          <li><a href="">Categories</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Event</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Resources</a></li>
         </ul>
       </nav>
       <div class="menu-button">
-        <button class="hover:cursor-pointer lg:hidden outline-0" id="menu-button">
+        <button
+          class="hover:cursor-pointer hover: lg:hidden outline-0"
+          id="menu-button"
+        >
           <img src="/img/icon-menu.svg" alt="" />
         </button>
       </div>
     </header>
+    <!-- main -->
     <main class="p-5">
-      <!-- <li><a href="#press">HOME</a></li>
-          <li><a href="#jet">JET Club</a></li>
-          <li><a href="#Drama & Dance">Drama & Dance</a></li>
-          <li><a href="#Music & Orchestra">Music & Orchestra</a></li>
-          <li><a href="#Home Maker">Home Maker</a></li>
-          <li><a href="#Literature and Debating">Literature & Debating</a></li>
-          <li>
-            <a href="#Young Earth Space Science">Young Earth & Space Science</a>
-          </li>
-          <li><a href="#Citizenship">Citizenship</a></li>
-          <li><a href="#young-entrepreneur">Young Entrepreneur</a></li> -->
+      <!-- trending button -->
+      <div class="relative bg-blue-50 rounded-lg p-2">
+        <button class="bg-blue-300 text-base p-1 rounded border-0">
+          Trending:
+        </button>
+        <a
+          id="trend-content"
+          class="inline-block text-sm hover:cursor-pointer hover:decoration-solid animate-fade-left animate-twice"
+        >
+          SSCE 2023/2024 result
+        </a>
+        <a
+          id="trend-content"
+          class="inline text-sm hover:cursor-pointer hover:decoration-solid animate-fade-left animate-twice"
+          >The most common debate</a
+        >
+        <a
+          id="trend-content"
+          class="inline text-sm hover:cursor-pointer hover:decoration-solid animate-fade-left animate-twice"
+          >UTME 2024</a
+        >
+        <a
+          id="trend-content"
+          class="inline text-sm hover:cursor-pointer hover:decoration-solid animate-fade-left animate-twice"
+          >Who is the winner</a
+        >
+      </div>
 
-      <section class="[&>*]:mb-4">
+      <section class="[&>*]:mb-4" id="">
         <!-- press section header image with title and subtitle -->
         <div
           class="w-full lg:flex md:grid md:grid-cols-2 gap-8 [&>*]:mt-4 [&>*]:border-2"
@@ -115,14 +142,217 @@
             aspernatur eos repudiandae aperiam animi fugiat fuga. Eos voluptates
             maxime quas quae odio.
           </div>
-          <div class="">
-            7Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Laudantium sequi ipsam iusto saepe, eligendi maiores ad, sint, enim
-            dicta perspiciatis dolorem reiciendis fuga sit? Quae voluptatum
-            numquam illum consectetur quidem? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Error voluptatibus, incidunt, cumque
-            libero porro consequuntur doloribus quia hic pariatur possimus,
-            harum ea aperiam atque at cum fugit sit placeat quae?
+          <!-- end of the year party -->
+          <div class="relative" id="slides-show">
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_2.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Tonight, we're living for the moment.
+              </div>
+            </div>
+
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_4.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Ready, set, play!
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_5.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                We celebrate together
+              </div>
+            </div>
+
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_7.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Good times and crazy friends make the best memories
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_8.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Dance like nobody's watching.
+              </div>
+            </div>
+
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_9.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Cheers to the good life!
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_10.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Party mode: ON
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_11.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Just here to party and chill
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_12.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Eat, drink, and be merry!
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_13.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Making memories one party at a time.
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_14.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Get your groove on!
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_15.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Eat, drink, and be fabulous
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_16.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Tonight, we're living for the moment
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_17.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Play like there's no tomorrow.
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_18.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                It's all fun and games until someone wins.
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_19.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Let the games begin!
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_20.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Pop, fizz, clink!
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_21.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Let's party like there is no tommorrow
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_22.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Dance away your sorrows!
+              </div>
+            </div>
+            <div class="fade" id="image-fade">
+              <img
+                class="w-full h-60"
+                src="/img/staff_party_2023/party_img_23.JPG"
+                alt=""
+              />
+              <div class="text-center text-base font-libre font-normal italic">
+                Enjoyment Gallore!
+              </div>
+            </div>
+
+            <div class="">
+              <figcaption class="font-thin w-full text-center">
+                2023, End of the year party
+              </figcaption>
+            </div>
           </div>
         </div>
       </section>
@@ -130,7 +360,7 @@
     <footer
       class="font-bold text-center text-slate-500 text-base lg:text-md mt-[2rem]"
     >
-      Made with love by Princeton College Students
+      Made with love by Princeton College ICT department
     </footer>
     <script src="/dist/script.js"></script>
   </body>

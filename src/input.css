@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    /* font-family: "Josefin Sans", sans-serif; */
+    font-family: "Roboto", sans-serif;
+  }
+}
 img {
   width: 100%;
   max-width: 100%;
@@ -21,6 +29,7 @@ nav.open {
   z-index: 9999999999;
 }
 
+/* desktop screen size */
 @media (min-with: 1024px) {
   nav.open {
     position: relative;
@@ -30,5 +39,18 @@ nav.open {
     z-index: auto;
     opacity: 1;
   }
+}
 
-} 
+/* fade animation for images */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

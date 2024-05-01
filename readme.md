@@ -1,5 +1,5 @@
 
-
+  
 
 
 
@@ -43,3 +43,50 @@
 -------------------------------------------------------------
 |                          Footer (Links, Contact)             |
 -------------------------------------------------------------
+School Blog
+
+- Homepage
+  - Header (with school logo and navigation menu)
+  - Featured Content Section
+    - Recent Blog Posts
+    - Upcoming Events
+    - Important Announcements
+  - Sidebar
+    - Navigation Links
+    - Recent Posts
+    - Popular Posts
+    - Categories
+    - Subscription Form
+    - Social Media Links
+  - Footer
+    - Contact Information
+    - Privacy Policy
+    - Terms of Service
+    - Copyright Information
+
+- Blog Posts
+  - Title
+  - Publication Date
+  - Author Information
+  - Body Text
+  - Images/Videos/Infographics
+  - Social Sharing Buttons
+  - Comments Section
+
+- About Us
+  - School History
+  - Mission, Vision, Values
+  - Faculty and Staff Profiles
+  - Contact Information
+
+- Events Calendar
+  - Calendar View
+  - Filter Options (by category, date, location)
+  - Event Details
+
+- Resources
+  - Study Guides
+  - Educational Materials
+  - Useful Links
+  - Categories
+

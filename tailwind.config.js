@@ -4,6 +4,13 @@ module.exports = {
     './dist/**/*.js'],
 
   theme: {
+
+    fontFamily: {
+
+      mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
+      libre: ["Libre Baskerville", "serif"]
+
+    },
     screens: {
       'xs': '320px',
       'sm': '640px',
@@ -23,10 +30,10 @@ module.exports = {
         '400': '#38c2f2',
 
       },
-      transparent:{
-        'black':'#00000000',
-        
-      
+      transparent: {
+        'black': '#00000000',
+
+
       },
       slate: {
         '300': '#cbd5e1',
@@ -66,8 +73,11 @@ module.exports = {
         '6': '48px',
       },
 
-      extend: {},
+      extend: {
+
+      },
     },
-    plugins: [],
+    plugins: [
+    ],
   }
 }
